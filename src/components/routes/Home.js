@@ -1,6 +1,4 @@
-import Top from '../common/Top';
 import Button from '../UI/Button';
-// import MainImg from '../../images/home_background.png';
 import MainImg from '../../images/main_image.png';
 import classes from './Home.module.scss';
 function Home() {

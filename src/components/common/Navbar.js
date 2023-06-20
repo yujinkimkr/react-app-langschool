@@ -2,7 +2,6 @@ import logo_r from '../../images/logo_kadza.png';
 import { Link } from "react-router-dom";
 import classes from './Navbar.module.scss';
 
-import Home from '../routes/Home';
 const Navbar = () => {
   return <div className={classes.nav__bar}>
     <div className={classes.nav__logo}>
