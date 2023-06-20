@@ -24,7 +24,7 @@ const Footer = () => {
       <h2>CONTACT US</h2>
       <p>Address : Gdynia, Poland</p>
       <p>Email: kadza.koreanski@gmail.com</p>
-      <a href="">
+      <a href="https://www.instagram.com/kadza.koreanski/">
         <p className={classes.sns}>
           <img style={{ 'width': '20px' }} src={insta} alt="facebook icon" />
           <span> &nbsp; @kadza.koreanski</span>
@@ -33,7 +33,6 @@ const Footer = () => {
       <p>
         <img style={{ 'width': '20px' }} src={facebook} alt="facebook icon" />
       </p>
-
     </div>
   </div >
 }

@@ -32,12 +32,6 @@ const Register = () => {
         <p>Start</p>
       </div>
     </div>
-    {/* <p className={classes.content}>
-      Diagnose the current level through counseling and level tests, and assign a teacher who fits the level. <br />
-      Conduct group or individual classes with native or Polish teachers.
-      <br />
-      Please don't hesitate to contact me if you have any questions.
-    </p> */}
   </div>
 }
 

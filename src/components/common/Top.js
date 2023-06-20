@@ -13,9 +13,6 @@ const Top = (props) => {
         {imgName === 'courses' &&
           <img className={classes.top__img} src={require('../../images/courses.svg').default} alt={imgName} />
         }
-        {/* {imgName === 'home' &&
-          <img className={classes.top__img} src={require('../../images/home.svg').default} alt={imgName} />
-        } */}
         {imgName === 'hom' &&
           <img className={classes.top__img} src={require('../../images/hom.svg').default} alt={imgName} />
         }

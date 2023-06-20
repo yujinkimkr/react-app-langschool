@@ -14,12 +14,9 @@ function Home() {
         <Button>Check Available Lessons</Button>
       </div>
       <div>
-        <img src={MainImg} alt="Home image" />
+        <img src={MainImg} alt="introduction main" />
       </div>
     </div>
-
-
-    {/* <Top title='Język koreański Courses' imgName='home_background' /> */}
   </div>
 }
 
