@@ -5,7 +5,7 @@ const MemberCard = (props) => {
   return <div className={classes.profile__container}>
     {
       props.profile === 'profile1' &&
-      <img className={classes.profile} src={require('../../images/profile1.svg').default} alt='profile' />
+      <img className={classes.profile} src={require('../../images/profile1.svg').default} alt='profile1' />
     }
     {
       props.profile === 'profile2' &&

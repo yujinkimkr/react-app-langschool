@@ -26,12 +26,13 @@ const Footer = () => {
       <p>Email: kadza.koreanski@gmail.com</p>
       <a href="https://www.instagram.com/kadza.koreanski/">
         <p className={classes.sns}>
-          <img style={{ 'width': '20px' }} src={insta} alt="facebook icon" />
+          <img style={{ 'width': '20px' }} src={insta} alt="instagram icon" />
           <span> &nbsp; @kadza.koreanski</span>
         </p>
       </a>
-      <p>
+      <p className={classes.sns}>
         <img style={{ 'width': '20px' }} src={facebook} alt="facebook icon" />
+        <span> &nbsp; <a href="https://www.facebook.com/profile.php?id=100093814483039">Go To 'Kadza Koreański'</a></span>
       </p>
     </div>
   </div >

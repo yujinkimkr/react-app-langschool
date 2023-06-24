@@ -20,7 +20,15 @@ body {}
   margin: auto 0;
   display: flex;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1rem 1%;
+  justify-content: space-between;
+  // width: 100%;
+
+  #menu__bar {
+    display: none;
+  }
+
+
 }
 
 .nav__menu {
@@ -28,31 +36,7 @@ body {}
   justify-content: space-around;
   font-size: 1.2rem;
   margin: auto 1rem;
-  width: 600px;
-}
-
-.nav__icons {
-  position: absolute;
-  margin: 0;
-  top: 0;
-  right: 0;
-  display: flex;
-  padding-left: 0;
-  width: 12vw;
-  height: 100%;
-
-  img {
-    width: 1.7rem;
-  }
-
-  li {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-
-
-  }
+  width: 60rem;
 }
 
 /* common */
@@ -63,4 +47,53 @@ a {
 
 li {
   list-style: none;
+}
+
+
+
+/* PC (해상도 1024px)*/
+@media all and (min-width:1024px) {}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+
+  .nav__bar {
+    padding: 0 1%;
+
+    .nav__menu {
+      justify-content: space-around;
+      flex-grow: 4;
+    }
+
+    .logo {
+      flex-grow: .2;
+      width: 17rem;
+    }
+  }
+
+
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+  .nav__menu {
+    // background-color: red;
+    display: none;
+  }
+
+  .nav__bar {
+    background-color: $theme-color;
+    padding: .4% 1%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav__logo {
+    width: 100%;
+
+    #menu__bar {
+      width: 21px;
+      display: block;
+    }
+  }
 }
