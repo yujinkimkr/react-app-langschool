@@ -8,7 +8,7 @@ const Contact = (props) => {
       <ul>
         <li><img src={require('../../images/loc.svg').default} alt="location" /></li>
         <li>VISIT US</li>
-        <li>GDYNIA, MOSTY</li>
+        <li>GDANSK</li>
       </ul>
       <ul>
         <li><img src={require('../../images/email.svg').default} alt="email" /></li>
