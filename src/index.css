@@ -17,6 +17,10 @@ code {
 
 a {
   text-decoration: none;
-  /* color: #333; */
   color: black;
+}
+
+/* MODAL */
+.modal {
+  background-color: red;
 }

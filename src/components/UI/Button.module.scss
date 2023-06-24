@@ -28,7 +28,11 @@ $theme-color: rgb(242, 238, 252);
 }
 
 /* Tablets Horizontal Tablets Vertical (Resolution 768px ~ 1023px)*/
-@media all and (min-width:768px) and (max-width:1023px) {}
+@media all and (min-width:768px) and (max-width:1023px) {
+  .button {
+    width: 200px;
+  }
+}
 
 
 /* Mobile horizontal, mobile vertical (Resolution 480px ~ 767px)*/

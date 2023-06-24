@@ -3,7 +3,7 @@ $theme-color: rgb(242, 238, 252);
 
 .footer__container {
   background-color: $theme-color;
-
+  display: flex;
   margin-top: 10%;
   padding: 1% 15%;
 
@@ -21,6 +21,14 @@ $theme-color: rgb(242, 238, 252);
   }
 }
 
+.email {
+  cursor: pointer;
+  transition: .2s;
+
+  &:hover {
+    color: rgb(247, 22, 22);
+  }
+}
 
 .sns {
   display: flex;
@@ -28,12 +36,15 @@ $theme-color: rgb(242, 238, 252);
   span {
     display: block;
   }
+
+  &:hover {
+    color: rgb(247, 22, 22);
+  }
 }
 
 /* PC (Resolution 1024px)*/
 @media all and (min-width:1024px) {
   .footer__container {
-    display: flex;
     justify-content: space-around;
 
 
@@ -57,7 +68,6 @@ $theme-color: rgb(242, 238, 252);
 @media all and (max-width:767px) {
 
   .footer__container {
-    display: flex;
     flex-direction: column;
     height: 100%;
     padding-bottom: 30px;

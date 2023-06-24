@@ -33,7 +33,7 @@ const Footer = () => {
     <div className={classes.footer__inner}>
       <h2>CONTACT US</h2>
       <p>Address : Gdansk, Poland</p>
-      <p onClick={() => { copyHandler('kadza.koreanski@gmail.com') }}>Email: kadza.koreanski@gmail.com</p>
+      <p className={classes.email} onClick={() => { copyHandler('kadza.koreanski@gmail.com') }}>Email: kadza.koreanski@gmail.com</p>
       <a href="https://www.instagram.com/kadza.koreanski/">
         <p className={classes.sns}>
           <img style={{ 'width': '20px' }} src={insta} alt="instagram icon" />

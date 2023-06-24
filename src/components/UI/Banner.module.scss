@@ -3,25 +3,24 @@
   width: 70vw;
   height: 15rem;
   border-radius: 12px;
-
   display: flex;
   justify-content: space-around;
-
   box-shadow: 3px 3px 3px rgb(173, 173, 173);
 
   div:first-child {
-    font-size: 2.3rem;
     color: #fff;
     flex: .7;
     font-weight: 700;
-    margin: 40px 80px;
+    margin: auto 50px;
+    font-size: 1.9rem;
+    flex: 3;
   }
 
   div:last-child {
     margin: 25px 80px;
     flex: 1;
-    // text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 
@@ -37,17 +36,7 @@
 @media all and (min-width:1024px) {}
 
 /* Tablets Horizontal Tablets Vertical (Resolution 768px ~ 1023px)*/
-@media all and (min-width:768px) and (max-width:1023px) {
-  .banner {
-    div:first-child {
-      margin: auto;
-    }
-
-    div:last-child {
-      display: none;
-    }
-  }
-}
+@media all and (min-width:768px) and (max-width:1023px) {}
 
 
 /* Mobile horizontal, mobile vertical (Resolution 480px ~ 767px)*/

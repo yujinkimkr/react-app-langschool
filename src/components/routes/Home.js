@@ -10,7 +10,7 @@ function Home() {
         <p>JOIN ONE OF OUR QUALIFIED COURSES</p>
         <p>No more inefficient classes until now, learn Korean from a professional teacher and in a fun way.
           It's been a while since I started Korean, but if I still haven't gotten out of the beginner's level, it's an opportunity to make Korean mine with systematic lessons!</p>
-        <Button>Check Available Lessons</Button>
+        <Button>Check available lesson</Button>
       </div>
       <div className={classes.home__inner}>
         <img src={MainImg} alt="introduction main" />
