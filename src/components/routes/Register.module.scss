@@ -3,12 +3,10 @@ $theme-color: rgb(242, 238, 252);
 .process_container {
   display: flex;
   justify-content: space-evenly;
-  margin: 80px 200px;
+  margin: 80px 180px;
 }
 
 .process {
-  width: 200px;
-  height: 200px;
   background-color: $theme-color;
   border-radius: 12px;
   box-shadow: 2px 2px 2px rgb(217, 217, 217);
@@ -23,11 +21,76 @@ $theme-color: rgb(242, 238, 252);
   }
 }
 
-.icon {
+.icon,
+.arrow__right,
+.arrow__down {
   width: 70px;
 }
 
 .content {
   display: flex;
   justify-content: space-around;
+}
+
+
+/* PC (Resolution 1024px)*/
+@media all and (min-width:1024px) {
+  .process {
+    width: 200px;
+    height: 200px;
+
+  }
+
+  .arrow__down {
+    display: none;
+  }
+}
+
+
+/* Tablets Horizontal Tablets Vertical (Resolution 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+  .process {
+    width: 150px;
+    height: 150px;
+
+    .icon,
+    .arrow__right {
+      width: 60px;
+    }
+  }
+
+  .arrow__down {
+    display: none;
+  }
+
+
+  .process_container {
+    margin: 35px;
+  }
+}
+
+/* Mobile horizontal, mobile vertical (Resolution 480px ~ 767px)*/
+@media all and (max-width:767px) {
+
+  .process_container {
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 0;
+
+    .arrow__right {
+      display: none;
+    }
+
+    .process {
+      width: 200px;
+      height: 200px;
+      margin: auto;
+
+    }
+
+    .arrow__down {
+      margin: 20px auto;
+      width: 50px;
+    }
+  }
 }

@@ -5,7 +5,7 @@ import Button from './Button';
 const Banner = (props) => {
   return <div className={classes.banner}>
     <div>
-      Hello Dude !! <br /> Let’s Start With Kadza Academy!
+      Hello!! <br /> Let’s Start With Kadza Academy!
     </div>
     <div>
       <Button>I'm a student</Button>

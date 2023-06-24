@@ -1,11 +1,9 @@
 $theme-color: rgb(242, 238, 252);
 
 .button {
-  // background-color: rgb(181, 172, 250);
-  background-color: #6e15bd;
-  color: white;
+  background-color: rgb(223, 211, 255);
+  color: #333;
   border: none;
-  width: 200px;
   height: 35px;
   font-size: .9rem;
   border-radius: 8px;
@@ -19,5 +17,24 @@ $theme-color: rgb(242, 238, 252);
     background-color: $theme-color;
     color: #333;
     // color: #fff;
+  }
+}
+
+/* PC (Resolution 1024px)*/
+@media all and (min-width:1024px) {
+  .button {
+    width: 200px;
+  }
+}
+
+/* Tablets Horizontal Tablets Vertical (Resolution 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {}
+
+
+/* Mobile horizontal, mobile vertical (Resolution 480px ~ 767px)*/
+@media all and (max-width:767px) {
+  .button {
+    margin-top: 20px;
+    width: 100%;
   }
 }

@@ -2,22 +2,10 @@
   padding: 1% 18%;
 }
 
-.courses {
-  display: flex;
-  justify-content: space-between;
-}
 
 h1 {
   text-align: center;
   margin: 5% 0 0;
-}
-
-.featured__container {
-
-  // p:first-child {
-  //   margin: 0 0 3%;
-  // }
-
 }
 
 .button__container {
@@ -25,7 +13,7 @@ h1 {
   text-align: right;
 }
 
-.featured {
+.featured__inner {
   display: flex;
   justify-content: space-between;
   // padding: .4% 10%;
@@ -35,4 +23,47 @@ h1 {
   margin-top: 100px;
   display: flex;
   justify-content: center;
+}
+
+/* PC (Resolution 1024px)*/
+@media all and (min-width:1024px) {
+  .courses {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Tablets Horizontal Tablets Vertical (Resolution 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+
+  .courses__container {
+    padding: 50px;
+
+    .courses {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+
+/* Mobile horizontal, mobile vertical (Resolution 480px ~ 767px)*/
+@media all and (max-width:767px) {
+  .courses__container {
+    text-align: center;
+    padding: 0;
+  }
+
+  .featured__container {
+
+    .featured__inner {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  .button__container {
+    margin: 0 25px;
+  }
 }

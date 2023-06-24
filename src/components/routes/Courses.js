@@ -30,7 +30,7 @@ function Courses() {
 
   ]
   return <React.Fragment>
-    <Top title='Ted / TOPIK / Writing / Drama' imgName='courses' />
+    <Top title='Courses' imgName='courses' />
     <div className={classes.courses__container}>
       <h2>LIST OF COURSES</h2>
       <div className={classes.courses}>
@@ -43,7 +43,7 @@ function Courses() {
       <div className={classes.featured__container}>
         <h1>Featured Courses</h1>
         <p>Explore our Popular Courses</p>
-        <div className={classes.featured}>
+        <div className={classes.featured__inner}>
           {classList.map((lesson) =>
             <FeaturedCard key={lesson.img_id} field={lesson.field} title={lesson.title} writer={lesson.writer} imgName={lesson.img_id} />
           )}

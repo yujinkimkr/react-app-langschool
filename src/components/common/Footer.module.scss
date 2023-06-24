@@ -2,13 +2,10 @@ $theme-color: rgb(242, 238, 252);
 // $theme-color: #EAF3FA;
 
 .footer__container {
-  // background-color: rgb(207, 215, 240);
   background-color: $theme-color;
 
-  display: flex;
-  justify-content: space-around;
   margin-top: 10%;
-  padding: 1% 18%;
+  padding: 1% 15%;
 
   .footer__inner {
     width: 300px;
@@ -24,19 +21,6 @@ $theme-color: rgb(242, 238, 252);
   }
 }
 
-.aaa {
-  *:first-child {
-    background-color: royalblue;
-
-    img {
-      width: 20px;
-    }
-  }
-
-  img {
-    width: 20px;
-  }
-}
 
 .sns {
   display: flex;
@@ -44,4 +28,39 @@ $theme-color: rgb(242, 238, 252);
   span {
     display: block;
   }
+}
+
+/* PC (Resolution 1024px)*/
+@media all and (min-width:1024px) {
+  .footer__container {
+    display: flex;
+    justify-content: space-around;
+
+
+  }
+}
+
+/* Tablets Horizontal Tablets Vertical (Resolution 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+
+  .footer__container {
+    padding: 20px;
+
+    .footer__inner:first-child {
+      display: none;
+    }
+  }
+}
+
+
+/* Mobile horizontal, mobile vertical (Resolution 480px ~ 767px)*/
+@media all and (max-width:767px) {
+
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 30px;
+  }
+
 }

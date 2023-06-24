@@ -35,7 +35,7 @@ const Footer = () => {
         <span> &nbsp; <a href="https://www.facebook.com/profile.php?id=100093814483039">Go To 'Kadza Koreański'</a></span>
       </p>
     </div>
-  </div >
+  </div>
 }
 
 export default Footer;

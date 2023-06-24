@@ -2,10 +2,7 @@ $theme-color: rgb(242, 238, 252);
 
 .top__container {
   background-color: $theme-color;
-  height: 20rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+
 
   div:first-child {
     font-size: 2.2rem;
@@ -15,4 +12,44 @@ $theme-color: rgb(242, 238, 252);
 
 .top__img {
   width: 350px;
+}
+
+/* PC (Resolution 1024px)*/
+@media all and (min-width:1024px) {
+
+  .top__container {
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+}
+
+/* Tablets Horizontal Tablets Vertical (Resolution 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+  .top__container {
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+}
+
+
+/* Mobile horizontal, mobile vertical (Resolution 480px ~ 767px)*/
+@media all and (max-width:767px) {
+
+  .top__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    div {
+      margin: 25px 0;
+    }
+  }
+
+
 }

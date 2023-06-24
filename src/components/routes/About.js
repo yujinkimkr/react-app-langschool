@@ -7,7 +7,7 @@ import Namsan from '../../images/Namsan.jpg';
 
 const About = (props) => {
   return <React.Fragment>
-    <Top title='Kadza Koreański Academy' imgName='about' />
+    <Top title='About us' imgName='about' />
 
     <div className={classes.about__container}>
       <div className={classes.intro__container}>
@@ -15,7 +15,7 @@ const About = (props) => {
         <IntroCard title='Flexible Learning' content='We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms' />
         <IntroCard title='Learn With Experts' content='We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms' />
       </div>
-      <div className={classes.video__container}>
+      <div className={classes.img__container}>
         <img src={Namsan} alt="Namsan Tower" />
       </div>
       <div className={classes.goal}>

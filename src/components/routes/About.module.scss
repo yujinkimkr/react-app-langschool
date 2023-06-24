@@ -1,20 +1,16 @@
 /* intro card */
 .intro__container {
+  position: relative;
   display: flex;
   justify-content: space-around;
-  padding: 5% 15% 0;
+  padding: 5% 15%;
 }
 
-.goal,
-.members,
-.video__container {
-  margin-top: 100px;
+.img__container {
   text-align: center;
-}
 
-.video__container {
   img {
-    max-width: 900px;
+    width: 90%;
   }
 }
 
@@ -29,4 +25,90 @@
 .memberList {
   display: flex;
   justify-content: center;
+}
+
+/* PC (Resolution 1024px)*/
+@media all and (min-width:1024px) {
+  .intro__container {}
+
+  .img__container {
+    text-align: center;
+
+    img {
+      max-width: 900px;
+    }
+  }
+
+  .members {
+    p {
+      text-align: center;
+    }
+  }
+}
+
+/* Tablets Horizontal Tablets Vertical (Resolution 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+  .img__container {
+
+    img {
+      margin-top: 60px;
+      max-width: 90%;
+    }
+  }
+
+  .goal,
+  .members,
+  .video__container {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .intro__container {
+    padding: 5% 7% 0;
+  }
+
+  .goal {
+    padding: 0 10%;
+  }
+
+
+  .memberList {
+    background-color: red;
+    width: 100%;
+  }
+}
+
+/* Mobile horizontal, mobile vertical (Resolution 480px ~ 767px)*/
+@media all and (max-width:767px) {
+  .intro__container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+
+  }
+
+
+  .goal {
+    padding: 7%;
+
+    h1 {
+      font-size: 28px;
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 17px;
+    }
+  }
+
+  .members {
+    h1 {
+      text-align: left;
+    }
+
+    .memberList {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
