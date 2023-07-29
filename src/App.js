@@ -6,27 +6,37 @@ import About from "./components/routes/About";
 import Courses from "./components/routes/Courses";
 import Contact from "./components/routes/Contact";
 import Register from "./components/routes/Register";
-import Modal from './components/UI/Modal';
+import NavbarModal from './components/UI/NavbarModal';
 import { Routes, Route } from 'react-router-dom';
+import styles from './App.module.scss';
+// import styles from './App.module.scss';
 
 function App() {
   const [navbarToggle, setNavbarToggle] = useState(false);
 
-  const menuSwitchHandler = (value) => {
-    if (!value) {
-      setNavbarToggle(value);
-    }
+  const menuSwitchHandler = () => {
+    setNavbarToggle((prev) => !prev);
   }
-  const toggleBarHandler = (toggleState) => {
-    setNavbarToggle(toggleState);
+  const toggleBarHandler = () => {
+    setNavbarToggle((prev) => !prev);
+  }
+  let heightOfNav = '';
+  const checkNavHeightHandler = (navHeight) => {
+    heightOfNav = navHeight + 'px';
+    console.log(heightOfNav);
   }
 
   return (
-    <div className="App">
-      <Navbar onToggleClick={toggleBarHandler} />
+
+    //  style={{ overflow: navbarToggle ? 'display' : 'hidden'}}
+
+    <div className={styles.app}>
+      <Navbar onToggleClick={toggleBarHandler} onCheckNavHeight={checkNavHeightHandler}/>
+
       {navbarToggle &&
-        <Modal onMenuSwitch={menuSwitchHandler} />
-      }
+        <NavbarModal onMenuSwitch={menuSwitchHandler} onShowNavbar={true} />
+      }  
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

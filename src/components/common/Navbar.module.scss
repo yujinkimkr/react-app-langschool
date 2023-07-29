@@ -2,18 +2,23 @@ $theme-color: rgb(242, 238, 252);
 // $theme-color: #EAF3FA;
 // $theme-color: rgb(255, 201, 201);
 
-body {}
-
 .logo {
   margin-left: 1.5rem;
   width: 22rem;
 }
 
 .nav__bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
   background-color: $theme-color;
-  padding: .4% 10%;
+  // padding: .4% 10%;
   display: flex;
   justify-content: space-between;
+
 }
 
 .nav__logo {
@@ -77,19 +82,21 @@ li {
 
 /* Mobile horizontal, mobile vertical (Resolution 480px ~ 767px)*/
 @media all and (max-width:767px) {
+  .nav__bar {
+    background-color: $theme-color;
+    display: flex;
+    justify-content: space-between;
+    z-index: 11;
+  }
+  
   .nav__menu {
     background-color: red;
     display: none;
   }
 
-  .nav__bar {
-    background-color: $theme-color;
-    padding: .4% 5%;
-    display: flex;
-    justify-content: space-between;
-  }
 
   .nav__logo {
+    padding: 3.5% 3%;
     width: 100%;
 
     #menu__bar {

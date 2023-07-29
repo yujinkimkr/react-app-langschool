@@ -1,0 +1,55 @@
+$theme-color: rgb(242, 238, 252);
+
+.navbar__modal {
+    height: 100vh;
+    width: 100vw;
+    // left: -100%;
+    position: fixed;
+    background-color: darken($theme-color, 5%);
+
+    animation-name: nav_modal;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+    z-index: 10;
+
+    @keyframes nav_modal {
+        from {
+            left: -100%;
+        }
+
+        to {
+            left: 0%;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        
+        li {
+          background-color: rgb(250, 249, 252);
+    
+          font-size: 1.5rem;
+          height: 4.5rem;
+    
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+}
+
+
+/* PC (Resolution 1024px)*/
+@media all and (min-width:1024px) {
+    .navbar__modal {
+        display: none;
+    }
+}
+
+/* Tablets Horizontal Tablets Vertical (Resolution 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+    .navbar__modal {
+        display: none;
+    }
+}
