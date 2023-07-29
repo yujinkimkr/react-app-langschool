@@ -33,7 +33,7 @@ const Footer = () => {
         <p>Korean for Beginners </p>
         <p>Fun Fun Learning by Korean Drama</p>
         <p>Studying by Korean TED 'Sebasi Talk'</p>
-        <p>pronunciation correction</p>
+        <p>Correction Pronunciation </p>
       </div>
       <div className={classes.footer__inner}>
         <h2>CONTACT US</h2>
@@ -59,16 +59,16 @@ const Footer = () => {
             <span> &nbsp; @kadza.koreanski</span>
           </p>
         </a>
-        <p className={classes.sns}>
-          <img style={{ width: "20px" }} src={facebook} alt="facebook icon" />
-          <span>
-            {" "}
-            &nbsp;{" "}
-            <a href="https://www.facebook.com/profile.php?id=100093814483039">
-              Kadza Koreański
-            </a>
-          </span>
-        </p>
+        <a
+          href="https://www.facebook.com/profile.php?id=100093814483039"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <p className={classes.sns}>
+            <img style={{ width: "20px" }} src={facebook} alt="facebook icon" />
+            <span> &nbsp; Kadza Koreański</span>
+          </p>
+        </a>
       </div>
     </div>
   );
